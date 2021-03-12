@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework lab3</title>
+</head>
+<body>
+<form method="get" action="hm_3.php" >
+	<table>
+		<tr>
+			<td>marka:</td>
+			<td>made date:</td>
+			<td>mass:</td>
+			<td>color:</td>
+			<td>id car:</td>
+		</tr>
+		<tr>
+		<td><input type="text" name="marka"></td>
+		<td><input type="date" name="made_date"></td>
+		<td><input type="text" name="mass"></td>
+		<td><input type="text" name="color"></td>
+		<td><input type="text" name="id_c"></td>
+		</tr>
+	</table>
+	
+	<input id="indicator" type="hidden" name="state">	
+
+<input type="submit" value="add" onclick="add()">
+<input type="submit" value="select" onclick="select2()">
+<input type="submit" value="update" onclick="update()">
+<input type="submit" value="delete" onclick="deleted2()">
+</form>
+<script type="text/javascript">
+	function add() {
+		document.getElementById("indicator").value="add";
+	}
+	function select2() {
+		document.getElementById("indicator").value="select";
+	}
+	function update() {
+		document.getElementById("indicator").value="update";
+	}
+	function deleted2() {
+		document.getElementById("indicator").value="delete";
+	}
+</script>
+</body>
+</html>
